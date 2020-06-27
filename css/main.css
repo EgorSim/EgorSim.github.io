@@ -1,0 +1,307 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+header{
+    padding-bottom: 72px;
+}
+.logo{
+    padding-top: 28px;
+}
+.d-flex ul{
+    text-decoration: none;
+    list-style: none;
+}
+.row .col-lg-10 .menu li{
+    display: inline;
+    margin-right: 38px;
+}
+.menu{
+    padding-top: 36px;
+    padding-left: 0
+}
+#tel{
+    color: #5D7DEA;
+    font-weight: bold;
+}
+.menu a{
+    color: #333333;
+}
+.bot{
+    margin-right: 0 !important;
+}
+#bottom{
+    background: #5D7DEA;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 15px 27px 15px 27px;
+
+}
+#bottom:hover{
+    color: #FFFFFF;
+    background: #4D64B2;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(15, 59, 208, 0.17);
+}
+.col-lg{
+    background: url(../img/back-head.png) no-repeat bottom right;
+}
+h1{
+    font-weight: 900;
+    font-size: 42px;
+    color: #333333;
+    padding-top: 110px;
+    padding-bottom: 23px;
+}
+.col-lg ul{
+    padding-left: 18px;
+    padding-bottom: 45px;
+}
+.col-lg ul li{
+    color: #C5D0E6;
+}
+span{
+    color: #333333;
+}
+.inst{
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #5D7DEA;
+    border-radius: 50px;
+    padding: 18px 77px 18px 77px;
+}
+.inst:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #4D64B2;
+    transition-duration: 0.3s;
+    box-shadow: 0px 4px 4px rgba(15, 59, 208, 0.17);
+}
+.col-lg p{
+    color: #5D7DEA;
+    font-size: 14px;
+    padding-top: 29px;
+}
+.section{
+    background: #5D7DEA;
+    padding-top: 100px;
+    padding-bottom: 116px;
+}
+.services{
+    font-size: 42px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.services_bot{
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.number{
+    color: #BDC4DB;
+    font-weight: bold;
+    font-size: 140px;
+}
+.info{
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+.info_bot{
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+}
+.img_tele{
+    padding-top: 45px;
+}
+.reviews{
+    padding-bottom: 150px;
+}
+.opis{
+    padding-left: 30px;
+}
+.otz_head{
+    padding-top: 134px;
+    padding-bottom: 60px;
+}
+.otz{
+    font-weight: 900;
+    font-size: 42px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 0;
+}
+.otz_bot{
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+}
+.foto{
+    width: 100px;
+    height: 101px;
+}
+.text_otz{
+    background: #F3F6FA;
+    border-radius: 40px;
+    margin-left: 20px;
+}
+.name{
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.spec{
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.read{
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 58px;
+}
+.company{
+    background-color: #5D7DEA;
+}
+body > div.company > div > div:nth-child(1) > div > p{
+    font-weight: 900;
+    font-size: 42px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 98px;
+    margin-bottom: 0;
+}
+body > div.company > div > div:nth-child(4){
+    padding-bottom: 101px;
+}
+body > div.company > div > div:nth-child(2) > div > p{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.pic{
+    width: 48px;
+    height: 48px;
+    margin-top: 15px;
+}
+.year{
+    padding-left: 20px;
+}
+body > div.company > div > div:nth-child(3) > div > p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 86px;
+}
+.a{
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+.b{
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.usl{
+    font-weight: bold;
+    font-size: 28px;
+    color: #333333;
+    padding-top: 155px;
+    padding-bottom: 31px;
+}
+.maps{
+    background-image: url(../img/image2.png);
+    position: relative;
+    height: 570px;
+}
+.clinik{
+    position: absolute;
+    top: 299px;
+    left: 343px;
+    width: 218px;
+}
+.num{
+    font-weight: 900;
+    font-size: 80px;
+    color: #5D7DEA;
+}
+.klinik_col{
+    font-weight: bold;
+    font-size: 17px;
+    color: #5D7DEA;
+}
+.vrach{
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    width: 184px;
+}
+.vrach_pod{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #5D7DEA;
+}
+.vr{
+    width: 33px;
+    margin: 0 auto;
+}
+.patn{
+    padding-bottom: 100px;
+}
+.nav{
+    background: rgba(197, 208, 230, 0.5);
+}
+body > div.nav > div > div:nth-child(1) > div > p{
+    font-weight: bold;
+    font-size: 36px;
+    color: #333333;
+    padding-top: 60px;
+}
+.adress{
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 14px;
+    color: #333333;
+}
+.place{
+    padding-bottom: 80px;
+}
+.footer{
+    background: #5D7DEA;
+}
+.infa{
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+.netw{
+    padding-left: 28px;
+}
+.netw_log{
+    padding-top: 25px;
+}
