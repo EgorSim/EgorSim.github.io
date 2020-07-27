@@ -1,302 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Страница</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <img src="img/Logo.png" alt="logo" class="logo">
+    <div class="score">0</div>
+    <img src="img/square_run.gif" alt="Человек" class="player" height="150">
+    <img src="img/RTS_Crate.webp" alt="block" class="block" height="50">
+
+
+
+    <div class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <div class="popup_title">Вы проиграли!!!</div>
+                <div class="popup_score">
+                    <span class="text">Ваш счет:</span>
+                    <div class="score">0</div>
                 </div>
-                <div class="col-lg-10  d-flex">
-                    <ul class="ml-auto menu">
-                        <li><a href="#">Возможности</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#" id="tel">8 (800) 555-38-62</a></li>
-                        <li class="bot"><a href="#" id="bottom">Начать сейчас</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg">
-                    <h1>
-                        Система повышения<br> лояльности пациентов и<br>  репутации клиники в сети
-                    </h1>
-                    <ul>
-                        <li><span>Увеличение положительных отзывов в сети</span></li>
-                        <li><span>Мгновенное реагирование на негативные отзывы</span></li>
-                        <li><span>Сегментация пациентов по степени лояльности</span></li>
-                        <li><span>Рейтингование врачей и мотивация сотрудников<br> к повышению сервиса</span></li>
-                    </ul>
-                    <a href="#" class="inst">Установить за 1₽</a>
-                    <p>Интегрируется с вашей медицинской информационной системой</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="services">Что вы получаете за 1 рубль?</p>
-                    <p class="services_bot">мы предлагаем широкий комплекс услуг для вашей клиники</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">01</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Увеличение количества положительных отррзывов о вашей клинике на независимых сайтах</p>
-                    <p class="info_bot">Алгоритмы системы позволяют существенно повысить количество положительных отзывов о вашей клинике. Пациентам будет легче принять решение обратиться в вашу клинику, что приведет к увеличению количества первичных обращений. </p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/11.png" class="img_tele" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">02</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Интерактивное взаимодействие
-                        с пациентами</p>
-                    <p class="info_bot">Пациенты в одно касание смогут остравить обратную связь без дополнительной регистрации и ввода данных о себе. Сразу чувствуется, что клиника идет в ногу со временем. </p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/12.png" class="img_tele" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">03</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Рейтингование врачей по отзывам пациентов</p>
-                    <p class="info_bot">Каждый пациент оценивает прием, система видит у какого врача он был и составляет отчет. За счет информирования врачей об их показателях повышается мотивация и вовлеченность сотрудников.</p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/3.png" class="img_tele" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">04</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Мгновенное реагирование
-                        на негативные отзывы</p>
-                    <p class="info_bot">Система оповестит о негативном отзыве, чтобы у вас была возможность оперативно отреагировать. Это позволит существенно снизить кол-во негативных отзывов в сети.</p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/4.png" class="img_tele" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">05</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Еженедельная статистика
-                        на телефон руководителя</p>
-                    <p class="info_bot">Вся необходимая информация о показателях клиники за период доступна у вас на телефоне. Теперь вы можете видеть и оценивать динамику всех показателей.</p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/5.png" class="img_tele" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">06</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Пакет из 50 сообщений для пациентов в месяц</p>
-                    <p class="info_bot">Предложение включает 50 сообщений в месяц. Каждый месяц до 50 ваших пациентов после приема получат персонифицированное обращение и смогут оставить обратную связь.</p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/6.png" class="img_tele" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 offset-lg-1">
-                    <span class="number">07</span>
-                </div>
-                <div class="col-lg-5 opis">
-                    <p class="info">Персонификация под вашу клинику</p>
-                    <p class="info_bot">Форма обратной связи брендируется логотипом вашей клиники. Это повышает доверие и лояльность пациентов.</p>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                    <img src="img/7.png" class="img_tele" alt="">
-                </div>
+                <div class="popup_return"><a href="#" class="return-bot">Начать заново</a></div>
             </div>
         </div>
     </div>
-    <div class="reviews">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 otz_head">
-                    <p class="otz">Отзывы клиентов</p>
-                    <p class="otz_bot">которые установили ZABOTA 2.0</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 d-flex">
-                    <img src="img/people_1.png" class="foto" alt="">
-                    <div class="text_otz d-flex flex-column">
-                        <p class="name">Ефремова Мария</p>
-                        <p class="spec">Patient Success and Marketing Director. Дентал Фэнтези</p>
-                        <p class="read">Мне кажется, мы – Дентал Фэнтези – были первыми, когда начали работать с Заботой. Отличные подрядчики. Постоянно на связи. Поддерживают любую идею. Мне прям даже ревниво, что ребята не только нас так хорошо опекают</p>
-                        <a href="#" class="ml-auto"><img src="img/like1.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex">
-                    <img src="img/people_2.png" class="foto" alt="">
-                    <div class="text_otz  d-flex flex-column">
-                        <p class="name">Борис Геберович</p>
-                        <p class="spec">Владелец сети клиник «Super Смайл»,
-                            г. Санкт Петербург</p>
-                        <p class="read">Мы работаем уже 3 года. Полет нормальный. Сервис удобный
-                            и полезный. Есть и сервисная составляющая сервиса (удобные автоматизированные напоминания о визитах)
-                            и маркетинговая составляющая.</p>
-                        <a href="#" class="ml-auto"><img src="img/like1.png " alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="company">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-4">
-                    <p>О компании</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg2">
-                    <p>ZABOTA 2.0</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6">
-                    <p class=''>Zabota 2.0 — ведущая система для автоматизации медицинского маркетинга, увеличения потока пациентов и их лояльности.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 d-flex">
-                    <img src="img/house1.png" class="pic" alt="">
-                    <div class="d-flex flex-column year">
-                        <span class="a">2014 год</span>
-                        <span class="b">основание компании</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 d-flex">
-                    <img src="img/placeholder(1)1.png" class="pic" alt="">
-                    <div class="d-flex flex-column year">
-                        <span class="a">523 клиники</span>
-                        <span class="b">на територии всей России</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 d-flex">
-                    <img src="img/Group.png" class="pic" alt="">
-                    <div class="d-flex flex-column year">
-                        <span class="a">7 200 000</span>
-                        <span class="b">счастливых пациентов</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="map">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="usl">
-                        Сейчас нашими услугами пользуются более 500 клиник! 
-                    </p>
-                    <a href="#" class="inst">Присоединиться за 1₽</a>
-                </div>
-                <div class="col-lg-8 maps">
-                    <div class="clinik">
-                        <span class="num">500+</span>
-                        <span class="klinik_col">клиник по всей России</span>
-                    </div>
-                    <div class="vrach d-flex flex-column">
-                        <img src="img/Group(1).png" class="vr" alt="">
-                        <span class="vrach_pod">cистема создана<br>
-                            при поддержке<br> врачей</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row patn">
-                <div class="col-lg-2">
-                    <img src="img/Рисунок1.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="img/Рисунок2.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="img/Рисунок3.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="img/Рисунок4.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="img/Рисунок5.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="img/Рисунок6.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p>Как нас найти?</p>
-                </div>
-            </div>
-            <div class="row place">
-                <div class="col-lg-5 d-flex">
-                    <img src="img/placeholder1.png" style="height: 20px; margin-top: 2px;" alt="">
-                    <p class="adress">г. Москва, Пресненская наб., 12<br>
-                        (Москва-Сити, Башня Федерация)</p>
-                </div>
-                <div class="col-lg-3 d-flex ">
-                    <img src="img/placeholder1.png" style="height: 20px; margin-top: 2px;" alt="">
-                    <p class="adress">+7 (499) 322-21-85</p>
-                </div>
-                <div class="col-lg-3 offset-lg-1 d-flex" style="padding-left: 115px;">                   
-                    <img src="img/placeholder1.png" style="height: 20px; margin-top: 2px;" alt="">
-                    <p class="adress">info@zabota.tech</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <p class="infa">Политика конфиденциальности
-                        © ООО «Медицина» ИНН: 7721479230<br>
-                        Является оператором персональных данных под регистрационным номером: 77-17-005444</p>
-                </div>
-                <div class="col-lg-3 offset-lg-2 d-flex" style="padding-right: 0;">
-                    <div class="ml-auto netw_log">
-                        <img src="img/facebook.png" alt="facebook" class="netw">
-                        <img src="img/insta.png" alt="insta" class="netw">
-                        <img src="img/telegram.png" alt="telega" class="netw">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+
+    <script src="js/script.js"></script> 
 </body>
 </html>
