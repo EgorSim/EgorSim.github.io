@@ -3,17 +3,21 @@ let score = document.querySelectorAll('.score');
 let popup = document.querySelector('.popup');
 
 
-function createBlock(){
+
+
+let create = setInterval(() => {
     let div = document.createElement('img');
     div.className = "block";
     div.setAttribute('src', 'img/RTS_Crate.webp');
     div.setAttribute('height', '50');
-    document.body.append(div);
-}
+    document.body.prepend(div);
+}, 5000);
 
-let create = setInterval(createBlock(), 5000);
+setInterval(function(){
+    block = document.querySelector('.block')
+},1)
 
-let block = document.querySelector('.block');
+
 
 function jump1(){
     if(event.keyCode == '32'){
@@ -32,15 +36,21 @@ function jump(event) {
 
 jump();
 
+
+
+
 let moveBlock = setInterval(function(){
     block.style.left = (block.offsetLeft - 2) +"px";
-}, 5)
+}, 5) 
+// 5
+
 
 setInterval(function(){
     if(block.offsetLeft < -50) {
         block.remove();
     };
 }, 100)
+// 100
 
 
 let i = 0;
@@ -61,9 +71,10 @@ setInterval(function(){
         // Тут остановить выполнение функции scoreUp()
         clearInterval(timerId);
         clearInterval(moveBlock);
+        clearInterval(create);
     }
 }, 1)
-
+// 1
 
 
 
