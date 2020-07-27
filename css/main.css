@@ -99,6 +99,11 @@ body {
     color: #fff;
     padding: 15px 40px;
     border-radius: 30px;
+    transition: background-color .3s ease;
+}
+
+.return-bot:hover {
+    background-color: rgb(30, 90, 90);
 }
 
 .jump {

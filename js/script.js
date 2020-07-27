@@ -1,8 +1,19 @@
 let player = document.querySelector('.player');
-let block = document.querySelector('.block');
 let score = document.querySelectorAll('.score');
 let popup = document.querySelector('.popup');
 
+
+function createBlock(){
+    let div = document.createElement('img');
+    div.className = "block";
+    div.setAttribute('src', 'img/RTS_Crate.webp');
+    div.setAttribute('height', '50');
+    document.body.append(div);
+}
+
+let create = setInterval(createBlock(), 5000);
+
+let block = document.querySelector('.block');
 
 function jump1(){
     if(event.keyCode == '32'){
@@ -21,7 +32,7 @@ function jump(event) {
 
 jump();
 
-setInterval(function(){
+let moveBlock = setInterval(function(){
     block.style.left = (block.offsetLeft - 2) +"px";
 }, 5)
 
@@ -32,15 +43,14 @@ setInterval(function(){
 }, 100)
 
 
-function scoreUp(){
-    let i = 0;
-    setInterval(function(){
-        i ++;
-        score[0].innerHTML = i;
-        score[1].innerHTML = i;
-    },100)
-}
-scoreUp();
+let i = 0;
+
+let timerId = setInterval(function(){
+    i ++;
+    score[0].innerHTML = i;
+    score[1].innerHTML = i;
+},100)
+
 
 // Проигрыш ===============================================================
 setInterval(function(){
@@ -48,9 +58,11 @@ setInterval(function(){
     if(block.offsetLeft < 150 && block.offsetLeft > 60 && bot <= 161){
         popup.style.display = "block";
         document.removeEventListener('keydown', jump1);
+        // Тут остановить выполнение функции scoreUp()
+        clearInterval(timerId);
+        clearInterval(moveBlock);
     }
 }, 1)
-
 
 
 
