@@ -7,13 +7,13 @@ let backgroud = document.querySelector('.background');
 
 
 //Создание блоков==============================================
-// let createBlock = setInterval(() => {
-//     let div = document.createElement('img');
-//     div.className = "block";
-//     div.setAttribute('src', 'img/RTS_Crate.webp');
-//     div.setAttribute('height', '50');
-//     document.body.prepend(div);
-// }, 5000);
+let createBlock = setInterval(() => {
+    let div = document.createElement('img');
+    div.className = "block";
+    div.setAttribute('src', 'img/RTS_Crate.webp');
+    div.setAttribute('height', '50');
+    document.body.prepend(div);
+}, 5000);
 
 setInterval(function(){
     block = document.querySelector('.block')
@@ -126,6 +126,8 @@ setInterval(function(){
             clearInterval(timerId);
             clearInterval(moveBlock);
             clearInterval(createBlock);
+            clearInterval(moveBackgroundR);
+            clearInterval(moveBackgroundL);
         }
     }
 }, 1)
